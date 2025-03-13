@@ -15,7 +15,33 @@ The dataset contains the following columns:
 | `IMDb Rating`    | The IMDb rating given by viewers (out of 10) |
 | `Votes`          | The number of IMDb votes the episode received |
 
+## Data Scraping Methodology 🕵️‍♂️
+
+The data was scraped using Python and the following libraries:
+### Packages Used:
+
+   - ```requests```: To send HTTP requests and fetch HTML content.
+
+   - ```BeautifulSoup```: To parse and extract data from HTML.
+
+   - ```re```: To clean and extract structured data using regular expressions.
+
+   - ```time```: To add delays between requests and prevent getting blocked.
+
+   - ```pandas```: To store and manipulate the scraped data in a structured format.
+
+### Scraping Process:
+
+- Send HTTP requests to the IMDb episode guide page.
+
+- Parse the HTML using BeautifulSoup.
+
+- Extract episode details including name, air date, rating, and votes using CSS selectors and regex.
+
+- Store data in a Pandas DataFrame and clean the extracted fields.
+
 ## 📊 Analysis To Be Performed
+
 
 1. **Trend Analysis**:
    - IMDb ratings over time.
